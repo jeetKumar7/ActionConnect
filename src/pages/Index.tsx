@@ -41,7 +41,7 @@ const Home = () => {
                       variant="outline"
                       className="w-full flex items-center justify-center px-8 py-3 text-base font-medium border-navy-700 text-navy-700 hover:bg-navy-50 md:py-4 md:text-lg md:px-10"
                     >
-                      <Link to="/about">Learn More</Link>
+                      <Link to="/content-library">Learn More</Link>
                     </Button>
                   </div>
                 </div>
