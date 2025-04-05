@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -101,7 +100,8 @@ const Community = () => {
       members: 1245,
       unread: 5,
       lastActivity: "10 minutes ago",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       tags: ["environment", "climate", "sustainability"],
     },
     {
@@ -110,7 +110,8 @@ const Community = () => {
       description: "Connect with others working on education equity and reform.",
       members: 876,
       lastActivity: "1 hour ago",
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       tags: ["education", "equality", "youth"],
     },
     {
@@ -120,7 +121,8 @@ const Community = () => {
       members: 654,
       unread: 2,
       lastActivity: "2 hours ago",
-      image: "https://images.unsplash.com/photo-1488521787991-ed7bbafc3ceb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["food", "hunger", "community"],
     },
     {
@@ -129,7 +131,8 @@ const Community = () => {
       description: "Discuss conservation efforts, biodiversity, and wildlife protection.",
       members: 932,
       lastActivity: "30 minutes ago",
-      image: "https://images.unsplash.com/photo-1564509044383-64a586c47ad6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       tags: ["wildlife", "conservation", "biodiversity"],
     },
     {
@@ -138,7 +141,8 @@ const Community = () => {
       description: "Exchange ideas on improving healthcare access and equity globally.",
       members: 732,
       lastActivity: "4 hours ago",
-      image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       tags: ["health", "healthcare", "equity"],
     },
   ];
@@ -160,7 +164,8 @@ const Community = () => {
       userId: "u2",
       userName: "Maya Chen",
       userAvatar: "https://randomuser.me/api/portraits/women/44.jpg",
-      content: "Yes! I was especially concerned about the predicted sea level rise. I'm working with a local group on coastal resilience if anyone wants to join.",
+      content:
+        "Yes! I was especially concerned about the predicted sea level rise. I'm working with a local group on coastal resilience if anyone wants to join.",
       timestamp: "11:52 AM",
       likes: 3,
       replies: 1,
@@ -170,7 +175,8 @@ const Community = () => {
       userId: "u3",
       userName: "James Wilson",
       userAvatar: "https://randomuser.me/api/portraits/men/65.jpg",
-      content: "I'm organizing a community tree planting event next month. Would love to have more volunteers join us! We're aiming to plant 500 trees in urban areas with low canopy coverage.",
+      content:
+        "I'm organizing a community tree planting event next month. Would love to have more volunteers join us! We're aiming to plant 500 trees in urban areas with low canopy coverage.",
       timestamp: "12:15 PM",
       likes: 8,
       replies: 4,
@@ -180,7 +186,8 @@ const Community = () => {
       userId: "u4",
       userName: "Sophia Garcia",
       userAvatar: "https://randomuser.me/api/portraits/women/54.jpg",
-      content: "Has anyone implemented climate education programs in their local schools? Looking for curriculum resources and success stories to share with our district.",
+      content:
+        "Has anyone implemented climate education programs in their local schools? Looking for curriculum resources and success stories to share with our district.",
       timestamp: "12:30 PM",
       likes: 2,
       replies: 3,
@@ -190,7 +197,8 @@ const Community = () => {
       userId: "u5",
       userName: "Michael Kim",
       userAvatar: "https://randomuser.me/api/portraits/men/75.jpg",
-      content: "Just wanted to share this great resource on individual actions to reduce carbon footprint: [link]. It has practical tips that actually make a difference.",
+      content:
+        "Just wanted to share this great resource on individual actions to reduce carbon footprint: [link]. It has practical tips that actually make a difference.",
       timestamp: "1:05 PM",
       likes: 10,
       replies: 1,
@@ -204,8 +212,10 @@ const Community = () => {
       userId: "u1",
       userName: "Emma Davis",
       userAvatar: "https://randomuser.me/api/portraits/women/17.jpg",
-      content: "Just finished a successful beach cleanup with our community group! We collected over 200 pounds of plastic and debris. Small actions add up to big impact. #OceanConservation #ClimateAction",
-      image: "https://images.unsplash.com/photo-1618477462146-050d2767eac4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      content:
+        "Just finished a successful beach cleanup with our community group! We collected over 200 pounds of plastic and debris. Small actions add up to big impact. #OceanConservation #ClimateAction",
+      image:
+        "https://images.unsplash.com/photo-1618477462146-050d2767eac4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       timestamp: "2 hours ago",
       likes: 45,
       comments: 7,
@@ -216,7 +226,8 @@ const Community = () => {
       userId: "u2",
       userName: "Carlos Mendez",
       userAvatar: "https://randomuser.me/api/portraits/men/45.jpg",
-      content: "Excited to share that our education access initiative has received funding to provide scholarships to 50 students from underserved communities! This will help break barriers to quality education. Looking for mentors to support these talented students.",
+      content:
+        "Excited to share that our education access initiative has received funding to provide scholarships to 50 students from underserved communities! This will help break barriers to quality education. Looking for mentors to support these talented students.",
       timestamp: "5 hours ago",
       likes: 72,
       comments: 12,
@@ -227,8 +238,10 @@ const Community = () => {
       userId: "u3",
       userName: "Aisha Patel",
       userAvatar: "https://randomuser.me/api/portraits/women/67.jpg",
-      content: "Our community garden is thriving! We're now providing fresh produce to 3 local food banks weekly. Food security starts with local action. Join us for volunteer days every Saturday morning!",
-      image: "https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      content:
+        "Our community garden is thriving! We're now providing fresh produce to 3 local food banks weekly. Food security starts with local action. Join us for volunteer days every Saturday morning!",
+      image:
+        "https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       timestamp: "1 day ago",
       likes: 38,
       comments: 5,
@@ -246,7 +259,8 @@ const Community = () => {
       time: "9:00 AM - 5:00 PM",
       location: "San Francisco, CA",
       attendees: 456,
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       tags: ["climate", "policy", "global"],
       isVirtual: true,
     },
@@ -258,7 +272,8 @@ const Community = () => {
       time: "10:00 AM - 2:00 PM",
       location: "Central Community Garden, Portland, OR",
       attendees: 28,
-      image: "https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://images.unsplash.com/photo-1592150621744-aca64f48394a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       tags: ["hunger", "community", "volunteer"],
       isVirtual: false,
     },
@@ -270,23 +285,25 @@ const Community = () => {
       time: "6:00 PM - 8:00 PM",
       location: "Online Zoom Webinar",
       attendees: 112,
-      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image:
+        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
       tags: ["education", "equality", "workshop"],
       isVirtual: true,
     },
   ];
 
   // Filter channels based on search query
-  const filteredChannels = channels.filter((channel) =>
-    searchQuery === "" ||
-    channel.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    channel.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    channel.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()))
+  const filteredChannels = channels.filter(
+    (channel) =>
+      searchQuery === "" ||
+      channel.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      channel.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      channel.tags.some((tag) => tag.toLowerCase().includes(searchQuery.toLowerCase()))
   );
 
   const handleSendMessage = () => {
     if (!messageInput.trim()) return;
-    
+
     if (!isAuthenticated) {
       toast({
         title: "Login Required",
@@ -295,18 +312,18 @@ const Community = () => {
       });
       return;
     }
-    
+
     toast({
       title: "Message Sent",
       description: "Your message has been posted to the channel.",
     });
-    
+
     setMessageInput("");
   };
 
   const handleSubmitPost = () => {
     if (!newPostContent.trim()) return;
-    
+
     if (!isAuthenticated) {
       toast({
         title: "Login Required",
@@ -315,12 +332,12 @@ const Community = () => {
       });
       return;
     }
-    
+
     toast({
       title: "Post Created",
       description: "Your post has been shared with the community.",
     });
-    
+
     setNewPostContent("");
   };
 
@@ -333,7 +350,7 @@ const Community = () => {
       });
       return;
     }
-    
+
     toast({
       title: "RSVP Confirmed",
       description: "You're now registered for this event. Details have been sent to your email.",
@@ -351,14 +368,14 @@ const Community = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      
+
       <main className="flex-grow bg-gradient-to-b from-blue-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-navy-700">Community</h1>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              Connect with like-minded individuals, share ideas, collaborate on projects, 
-              and join discussions about causes that matter to you.
+              Connect with like-minded individuals, share ideas, collaborate on projects, and join discussions about
+              causes that matter to you.
             </p>
           </div>
 
@@ -407,9 +424,7 @@ const Community = () => {
                     <ScrollArea className="h-[500px]">
                       <div className="px-4 py-2">
                         {filteredChannels.length === 0 ? (
-                          <div className="text-center py-8 text-gray-500">
-                            No channels found matching your search.
-                          </div>
+                          <div className="text-center py-8 text-gray-500">No channels found matching your search.</div>
                         ) : (
                           <div className="space-y-2">
                             {filteredChannels.map((channel) => (
@@ -437,18 +452,10 @@ const Community = () => {
                                 )}
                                 <div className="flex-1 min-w-0">
                                   <div className="flex justify-between items-start">
-                                    <h4 className="font-medium text-navy-700 truncate">
-                                      {channel.name}
-                                    </h4>
-                                    {channel.unread && (
-                                      <Badge className="ml-2 bg-teal-400">
-                                        {channel.unread}
-                                      </Badge>
-                                    )}
+                                    <h4 className="font-medium text-navy-700 truncate">{channel.name}</h4>
+                                    {channel.unread && <Badge className="ml-2 bg-teal-400">{channel.unread}</Badge>}
                                   </div>
-                                  <p className="text-sm text-gray-500 line-clamp-2">
-                                    {channel.description}
-                                  </p>
+                                  <p className="text-sm text-gray-500 line-clamp-2">{channel.description}</p>
                                   <div className="flex items-center mt-1 text-xs text-gray-400">
                                     <Users className="h-3 w-3 mr-1" />
                                     {channel.members} members
@@ -489,7 +496,8 @@ const Community = () => {
                             <div>
                               <CardTitle>{activeChannel.name}</CardTitle>
                               <CardDescription>
-                                {activeChannel.members} members • {activeChannel.tags.map(tag => `#${tag}`).join(", ")}
+                                {activeChannel.members} members •{" "}
+                                {activeChannel.tags.map((tag) => `#${tag}`).join(", ")}
                               </CardDescription>
                             </div>
                           </div>
@@ -508,16 +516,10 @@ const Community = () => {
                               </div>
                               <div className="flex-1">
                                 <div className="flex items-center">
-                                  <span className="font-medium text-navy-700">
-                                    {message.userName}
-                                  </span>
-                                  <span className="text-xs text-gray-400 ml-2">
-                                    {message.timestamp}
-                                  </span>
+                                  <span className="font-medium text-navy-700">{message.userName}</span>
+                                  <span className="text-xs text-gray-400 ml-2">{message.timestamp}</span>
                                 </div>
-                                <p className="text-gray-700 mt-1">
-                                  {message.content}
-                                </p>
+                                <p className="text-gray-700 mt-1">{message.content}</p>
                                 <div className="flex items-center mt-2 space-x-3">
                                   <button className="text-gray-500 hover:text-teal-500 text-xs flex items-center">
                                     <ThumbsUp className="h-3 w-3 mr-1" />
@@ -540,34 +542,36 @@ const Community = () => {
                       <div className="p-4 border-t">
                         <div className="flex items-end gap-2">
                           <Textarea
-                            placeholder={isAuthenticated ? "Type your message..." : "Log in to join the conversation..."}
+                            placeholder={
+                              isAuthenticated ? "Type your message..." : "Log in to join the conversation..."
+                            }
                             value={messageInput}
                             onChange={(e) => setMessageInput(e.target.value)}
                             className="min-h-[80px] flex-1"
                             disabled={!isAuthenticated}
                           />
                           <div className="flex flex-col space-y-2">
-                            <Button 
-                              variant="ghost" 
-                              size="icon" 
+                            <Button
+                              variant="ghost"
+                              size="icon"
                               className="rounded-full"
                               onClick={isAuthenticated ? () => {} : promptLogin}
                             >
                               <PaperclipIcon className="h-5 w-5 text-gray-500" />
                               <span className="sr-only">Attach file</span>
                             </Button>
-                            <Button 
-                              variant="ghost" 
-                              size="icon" 
+                            <Button
+                              variant="ghost"
+                              size="icon"
                               className="rounded-full"
                               onClick={isAuthenticated ? () => {} : promptLogin}
                             >
                               <Image className="h-5 w-5 text-gray-500" />
                               <span className="sr-only">Add image</span>
                             </Button>
-                            <Button 
-                              variant="ghost" 
-                              size="icon" 
+                            <Button
+                              variant="ghost"
+                              size="icon"
                               className="rounded-full"
                               onClick={isAuthenticated ? () => {} : promptLogin}
                             >
@@ -591,12 +595,9 @@ const Community = () => {
                     <Card className="h-[600px] flex items-center justify-center">
                       <div className="text-center p-6">
                         <MessageSquare className="h-12 w-12 mx-auto text-gray-300 mb-4" />
-                        <h3 className="text-lg font-medium text-navy-700 mb-2">
-                          Select a Channel
-                        </h3>
+                        <h3 className="text-lg font-medium text-navy-700 mb-2">Select a Channel</h3>
                         <p className="text-gray-500 max-w-md">
-                          Choose a channel from the list to join discussions on topics
-                          you're passionate about.
+                          Choose a channel from the list to join discussions on topics you're passionate about.
                         </p>
                       </div>
                     </Card>
@@ -619,7 +620,9 @@ const Community = () => {
                         </div>
                         <div className="flex-1">
                           <Textarea
-                            placeholder={isAuthenticated ? "Share something with the community..." : "Log in to create a post..."}
+                            placeholder={
+                              isAuthenticated ? "Share something with the community..." : "Log in to create a post..."
+                            }
                             value={newPostContent}
                             onChange={(e) => setNewPostContent(e.target.value)}
                             className="resize-none mb-3"
@@ -627,18 +630,18 @@ const Community = () => {
                           />
                           <div className="flex justify-between items-center">
                             <div className="flex space-x-2">
-                              <Button 
-                                variant="ghost" 
-                                size="sm" 
+                              <Button
+                                variant="ghost"
+                                size="sm"
                                 className="text-gray-500"
                                 onClick={isAuthenticated ? () => {} : promptLogin}
                               >
                                 <Image className="h-4 w-4 mr-1" />
                                 Photo
                               </Button>
-                              <Button 
-                                variant="ghost" 
-                                size="sm" 
+                              <Button
+                                variant="ghost"
+                                size="sm"
                                 className="text-gray-500"
                                 onClick={isAuthenticated ? () => {} : promptLogin}
                               >
@@ -666,21 +669,13 @@ const Community = () => {
                       <CardContent className="pt-6">
                         <div className="flex items-start gap-4">
                           <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0">
-                            <img
-                              src={post.userAvatar}
-                              alt={post.userName}
-                              className="w-full h-full object-cover"
-                            />
+                            <img src={post.userAvatar} alt={post.userName} className="w-full h-full object-cover" />
                           </div>
                           <div className="flex-1">
                             <div className="flex justify-between items-start">
                               <div>
-                                <h3 className="font-medium text-navy-700">
-                                  {post.userName}
-                                </h3>
-                                <p className="text-xs text-gray-500">
-                                  {post.timestamp}
-                                </p>
+                                <h3 className="font-medium text-navy-700">{post.userName}</h3>
+                                <p className="text-xs text-gray-500">{post.timestamp}</p>
                               </div>
                               <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
                                 <Bookmark className="h-4 w-4" />
@@ -699,11 +694,7 @@ const Community = () => {
                             )}
                             <div className="flex flex-wrap gap-2 mt-3">
                               {post.tags.map((tag) => (
-                                <Badge
-                                  key={tag}
-                                  variant="outline"
-                                  className="bg-teal-50 text-teal-700 border-teal-200"
-                                >
+                                <Badge key={tag} variant="outline" className="bg-teal-50 text-teal-700 border-teal-200">
                                   #{tag}
                                 </Badge>
                               ))}
@@ -716,11 +707,7 @@ const Community = () => {
                                 className="text-gray-500 hover:text-red-500"
                                 onClick={isAuthenticated ? () => {} : promptLogin}
                               >
-                                <Heart
-                                  className={`h-4 w-4 mr-1 ${
-                                    post.isLiked ? "fill-red-500 text-red-500" : ""
-                                  }`}
-                                />
+                                <Heart className={`h-4 w-4 mr-1 ${post.isLiked ? "fill-red-500 text-red-500" : ""}`} />
                                 {post.likes}
                               </Button>
                               <Button
@@ -761,34 +748,22 @@ const Community = () => {
                         <div className="flex items-start gap-2">
                           <Badge className="bg-teal-400">#1</Badge>
                           <div>
-                            <h4 className="font-medium text-navy-700 text-sm">
-                              Climate Policy Summit Outcomes
-                            </h4>
-                            <p className="text-xs text-gray-500">
-                              156 discussions • 34 new today
-                            </p>
+                            <h4 className="font-medium text-navy-700 text-sm">Climate Policy Summit Outcomes</h4>
+                            <p className="text-xs text-gray-500">156 discussions • 34 new today</p>
                           </div>
                         </div>
                         <div className="flex items-start gap-2">
                           <Badge className="bg-teal-400">#2</Badge>
                           <div>
-                            <h4 className="font-medium text-navy-700 text-sm">
-                              Community Garden Best Practices
-                            </h4>
-                            <p className="text-xs text-gray-500">
-                              98 discussions • 12 new today
-                            </p>
+                            <h4 className="font-medium text-navy-700 text-sm">Community Garden Best Practices</h4>
+                            <p className="text-xs text-gray-500">98 discussions • 12 new today</p>
                           </div>
                         </div>
                         <div className="flex items-start gap-2">
                           <Badge className="bg-teal-400">#3</Badge>
                           <div>
-                            <h4 className="font-medium text-navy-700 text-sm">
-                              Education Equity Report
-                            </h4>
-                            <p className="text-xs text-gray-500">
-                              87 discussions • 8 new today
-                            </p>
+                            <h4 className="font-medium text-navy-700 text-sm">Education Equity Report</h4>
+                            <p className="text-xs text-gray-500">87 discussions • 8 new today</p>
                           </div>
                         </div>
                       </div>
@@ -856,7 +831,9 @@ const Community = () => {
                           <div key={i} className="text-center">
                             <div className="relative">
                               <img
-                                src={`https://randomuser.me/api/portraits/${i % 2 === 0 ? 'men' : 'women'}/${20 + i}.jpg`}
+                                src={`https://randomuser.me/api/portraits/${i % 2 === 0 ? "men" : "women"}/${
+                                  20 + i
+                                }.jpg`}
                                 alt="Member"
                                 className="w-10 h-10 rounded-full"
                               />
@@ -894,15 +871,14 @@ const Community = () => {
                   {events.map((event) => (
                     <Card key={event.id} className="overflow-hidden card-hover">
                       <div className="relative h-40">
-                        <img
-                          src={event.image}
-                          alt={event.title}
-                          className="w-full h-full object-cover"
-                        />
+                        <img src={event.image} alt={event.title} className="w-full h-full object-cover" />
                         <div className="absolute top-2 right-2">
-                          <Badge variant="secondary" className={`${
-                            event.isVirtual ? "bg-blue-100 text-blue-700" : "bg-orange-100 text-orange-700"
-                          }`}>
+                          <Badge
+                            variant="secondary"
+                            className={`${
+                              event.isVirtual ? "bg-blue-100 text-blue-700" : "bg-orange-100 text-orange-700"
+                            }`}
+                          >
                             {event.isVirtual ? "Virtual" : "In Person"}
                           </Badge>
                         </div>
@@ -925,16 +901,10 @@ const Community = () => {
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="pb-2">
-                        <p className="text-sm text-gray-600 line-clamp-2">
-                          {event.description}
-                        </p>
+                        <p className="text-sm text-gray-600 line-clamp-2">{event.description}</p>
                         <div className="mt-3 flex flex-wrap gap-2">
                           {event.tags.map((tag) => (
-                            <Badge
-                              key={tag}
-                              variant="outline"
-                              className="bg-teal-50 text-teal-700 border-teal-200"
-                            >
+                            <Badge key={tag} variant="outline" className="bg-teal-50 text-teal-700 border-teal-200">
                               #{tag}
                             </Badge>
                           ))}
@@ -945,8 +915,10 @@ const Community = () => {
                           <Users className="h-4 w-4 mr-1" />
                           {event.attendees} attending
                         </div>
-                        <Button 
-                          className={event.isAttending ? "bg-orange-400 hover:bg-orange-500" : "bg-teal-400 hover:bg-teal-500"}
+                        <Button
+                          className={
+                            event.isAttending ? "bg-orange-400 hover:bg-orange-500" : "bg-teal-400 hover:bg-teal-500"
+                          }
                           onClick={() => handleAttendEvent(event.id)}
                         >
                           {event.isAttending ? "Attending" : "Attend"}

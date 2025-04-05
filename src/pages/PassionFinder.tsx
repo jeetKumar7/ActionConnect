@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -174,142 +173,162 @@ const PassionFinder = () => {
     climate: {
       id: "climate",
       name: "Climate Action",
-      description: "Working to combat climate change and its impacts through sustainable practices, policy advocacy, and community education.",
+      description:
+        "Working to combat climate change and its impacts through sustainable practices, policy advocacy, and community education.",
       matchPercentage: 0,
       tags: ["environment", "sustainability", "renewable energy", "policy"],
       actions: [
         "Join local climate advocacy groups",
         "Volunteer for climate education initiatives",
         "Support renewable energy projects",
-        "Participate in climate strikes and rallies"
+        "Participate in climate strikes and rallies",
       ],
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     },
     conservation: {
       id: "conservation",
       name: "Wildlife Conservation",
-      description: "Protecting and preserving wildlife and natural habitats through conservation efforts, anti-poaching initiatives, and ecosystem restoration.",
+      description:
+        "Protecting and preserving wildlife and natural habitats through conservation efforts, anti-poaching initiatives, and ecosystem restoration.",
       matchPercentage: 0,
       tags: ["wildlife", "biodiversity", "ecosystem", "preservation"],
       actions: [
         "Volunteer with wildlife conservation organizations",
         "Participate in habitat restoration projects",
         "Support anti-poaching initiatives",
-        "Advocate for protected areas and wildlife corridors"
+        "Advocate for protected areas and wildlife corridors",
       ],
-      image: "https://images.unsplash.com/photo-1564509044383-64a586c47ad6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1655980868066-027183c6f464?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     education: {
       id: "education",
       name: "Education Access",
-      description: "Promoting equal access to quality education for all, particularly in underserved communities and for marginalized populations.",
+      description:
+        "Promoting equal access to quality education for all, particularly in underserved communities and for marginalized populations.",
       matchPercentage: 0,
       tags: ["learning", "literacy", "schools", "opportunity"],
       actions: [
         "Volunteer as a tutor or mentor",
         "Support school supply drives",
         "Advocate for education funding and policy reform",
-        "Help build or improve educational facilities"
+        "Help build or improve educational facilities",
       ],
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     },
     equality: {
       id: "equality",
       name: "Equality & Rights",
-      description: "Fighting for equal rights, social justice, and ending discrimination based on race, gender, sexuality, religion, or ability.",
+      description:
+        "Fighting for equal rights, social justice, and ending discrimination based on race, gender, sexuality, religion, or ability.",
       matchPercentage: 0,
       tags: ["justice", "human rights", "diversity", "inclusion"],
       actions: [
         "Join civil rights organizations",
         "Participate in awareness campaigns",
         "Support legal advocacy for marginalized groups",
-        "Engage in community dialogue and education"
+        "Engage in community dialogue and education",
       ],
-      image: "https://images.unsplash.com/photo-1621504450181-5d356f61d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1621504450181-5d356f61d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     },
     healthcare: {
       id: "healthcare",
       name: "Healthcare Access",
-      description: "Working to ensure that everyone has access to quality, affordable healthcare services and medical treatments worldwide.",
+      description:
+        "Working to ensure that everyone has access to quality, affordable healthcare services and medical treatments worldwide.",
       matchPercentage: 0,
       tags: ["health", "medicine", "wellness", "accessibility"],
       actions: [
         "Volunteer at free health clinics",
         "Support medical outreach programs",
         "Advocate for healthcare policy reform",
-        "Participate in health education initiatives"
+        "Participate in health education initiatives",
       ],
-      image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     },
     "mental-health": {
       id: "mental-health",
       name: "Mental Health Awareness",
-      description: "Promoting mental health awareness, reducing stigma, and improving access to mental health services and support.",
+      description:
+        "Promoting mental health awareness, reducing stigma, and improving access to mental health services and support.",
       matchPercentage: 0,
       tags: ["psychology", "wellness", "support", "education"],
       actions: [
         "Volunteer with mental health organizations",
         "Participate in awareness campaigns",
         "Support crisis intervention services",
-        "Advocate for mental health policy improvements"
+        "Advocate for mental health policy improvements",
       ],
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     },
     hunger: {
       id: "hunger",
       name: "Hunger Relief",
-      description: "Addressing food insecurity and hunger through food banks, meal programs, sustainable agriculture, and policy change.",
+      description:
+        "Addressing food insecurity and hunger through food banks, meal programs, sustainable agriculture, and policy change.",
       matchPercentage: 0,
       tags: ["food security", "nutrition", "agriculture", "community"],
       actions: [
         "Volunteer at food banks or soup kitchens",
         "Organize food drives",
         "Support sustainable agriculture initiatives",
-        "Advocate for food security policies"
+        "Advocate for food security policies",
       ],
-      image: "https://images.unsplash.com/photo-1488521787991-ed7bbafc3ceb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1531928351158-2f736078e0a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     poverty: {
       id: "poverty",
       name: "Poverty Reduction",
-      description: "Working to alleviate poverty through economic development, housing initiatives, financial education, and policy advocacy.",
+      description:
+        "Working to alleviate poverty through economic development, housing initiatives, financial education, and policy advocacy.",
       matchPercentage: 0,
       tags: ["economic justice", "housing", "employment", "development"],
       actions: [
         "Support microfinance initiatives",
         "Volunteer with housing assistance programs",
         "Participate in job training and placement services",
-        "Advocate for economic justice policies"
+        "Advocate for economic justice policies",
       ],
-      image: "https://images.unsplash.com/photo-1519430044529-9a9a57177865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1519430044529-9a9a57177865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     },
     innovation: {
       id: "innovation",
       name: "Social Innovation",
-      description: "Developing creative solutions to social problems through technology, entrepreneurship, and collaborative approaches.",
+      description:
+        "Developing creative solutions to social problems through technology, entrepreneurship, and collaborative approaches.",
       matchPercentage: 0,
       tags: ["technology", "entrepreneurship", "solutions", "creativity"],
       actions: [
         "Join social innovation hubs or incubators",
         "Participate in hackathons for social good",
         "Support social enterprises",
-        "Mentor social entrepreneurs"
+        "Mentor social entrepreneurs",
       ],
-      image: "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     },
     community: {
       id: "community",
       name: "Community Development",
-      description: "Building stronger, more resilient communities through local initiatives, civic engagement, and grassroots organizing.",
+      description:
+        "Building stronger, more resilient communities through local initiatives, civic engagement, and grassroots organizing.",
       matchPercentage: 0,
       tags: ["local action", "civic engagement", "neighborhood", "grassroots"],
       actions: [
         "Join neighborhood associations",
         "Participate in community planning processes",
         "Support local businesses and initiatives",
-        "Volunteer for community improvement projects"
+        "Volunteer for community improvement projects",
       ],
-      image: "https://images.unsplash.com/photo-1556484687-30636164638b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+      image:
+        "https://images.unsplash.com/photo-1556484687-30636164638b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
     },
   };
 
@@ -393,13 +412,10 @@ const PassionFinder = () => {
               <div className="inline-block p-3 bg-orange-100 rounded-full mb-6">
                 <Heart className="h-12 w-12 text-red-500" />
               </div>
-              <h1 className="text-4xl font-bold text-navy-700 mb-4">
-                Find Your Passion
-              </h1>
+              <h1 className="text-4xl font-bold text-navy-700 mb-4">Find Your Passion</h1>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-                Discover the social causes that align with your values, interests,
-                and skills. Take our quick quiz to find where you can make the
-                biggest impact.
+                Discover the social causes that align with your values, interests, and skills. Take our quick quiz to
+                find where you can make the biggest impact.
               </p>
               <Button
                 onClick={() => setStep("quiz")}
@@ -420,31 +436,19 @@ const PassionFinder = () => {
                     Question {currentQuestion + 1} of {questions.length}
                   </span>
                   <span className="text-sm font-medium text-gray-500">
-                    {Math.round(((currentQuestion + 1) / questions.length) * 100)}%
-                    Complete
+                    {Math.round(((currentQuestion + 1) / questions.length) * 100)}% Complete
                   </span>
                 </div>
-                <Progress
-                  value={((currentQuestion + 1) / questions.length) * 100}
-                  className="h-2"
-                />
+                <Progress value={((currentQuestion + 1) / questions.length) * 100} className="h-2" />
               </div>
 
               <Card className="mb-8">
                 <CardHeader>
-                  <CardTitle className="text-navy-700 text-xl">
-                    {questions[currentQuestion].text}
-                  </CardTitle>
-                  <CardDescription>
-                    Select the option that best resonates with you
-                  </CardDescription>
+                  <CardTitle className="text-navy-700 text-xl">{questions[currentQuestion].text}</CardTitle>
+                  <CardDescription>Select the option that best resonates with you</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <RadioGroup
-                    value={selectedAnswer || ""}
-                    onValueChange={setSelectedAnswer}
-                    className="space-y-4"
-                  >
+                  <RadioGroup value={selectedAnswer || ""} onValueChange={setSelectedAnswer} className="space-y-4">
                     {questions[currentQuestion].options.map((option) => (
                       <div
                         key={option.id}
@@ -454,15 +458,8 @@ const PassionFinder = () => {
                             : "hover:border-teal-200 hover:bg-teal-50/50"
                         }`}
                       >
-                        <RadioGroupItem
-                          value={option.id}
-                          id={option.id}
-                          className="mt-1"
-                        />
-                        <Label
-                          htmlFor={option.id}
-                          className="flex-1 cursor-pointer"
-                        >
+                        <RadioGroupItem value={option.id} id={option.id} className="mt-1" />
+                        <Label htmlFor={option.id} className="flex-1 cursor-pointer">
                           {option.text}
                         </Label>
                       </div>
@@ -488,9 +485,7 @@ const PassionFinder = () => {
                     disabled={!selectedAnswer}
                     className="bg-teal-400 hover:bg-teal-500"
                   >
-                    {currentQuestion < questions.length - 1
-                      ? "Next Question"
-                      : "See Results"}
+                    {currentQuestion < questions.length - 1 ? "Next Question" : "See Results"}
                   </Button>
                 </CardFooter>
               </Card>
@@ -503,12 +498,10 @@ const PassionFinder = () => {
                 <div className="inline-block p-3 bg-teal-100 rounded-full mb-6">
                   <Sparkles className="h-12 w-12 text-teal-400" />
                 </div>
-                <h1 className="text-4xl font-bold text-navy-700 mb-4">
-                  Your Passion Results
-                </h1>
+                <h1 className="text-4xl font-bold text-navy-700 mb-4">Your Passion Results</h1>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                  Based on your responses, here are the causes that align most
-                  closely with your values, interests, and skills.
+                  Based on your responses, here are the causes that align most closely with your values, interests, and
+                  skills.
                 </p>
               </div>
 
@@ -516,52 +509,31 @@ const PassionFinder = () => {
                 {matchedCauses.map((cause) => (
                   <Card key={cause.id} className="overflow-hidden">
                     <div className="h-40 overflow-hidden">
-                      <img
-                        src={cause.image}
-                        alt={cause.name}
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={cause.image} alt={cause.name} className="w-full h-full object-cover" />
                     </div>
                     <CardHeader className="pb-2">
                       <div className="flex justify-between items-center">
-                        <CardTitle className="text-navy-700">
-                          {cause.name}
-                        </CardTitle>
-                        <Badge className="bg-teal-400 text-white">
-                          {cause.matchPercentage}% Match
-                        </Badge>
+                        <CardTitle className="text-navy-700">{cause.name}</CardTitle>
+                        <Badge className="bg-teal-400 text-white">{cause.matchPercentage}% Match</Badge>
                       </div>
                     </CardHeader>
                     <CardContent className="pb-2 space-y-4">
-                      <p className="text-gray-600 text-sm">
-                        {cause.description}
-                      </p>
+                      <p className="text-gray-600 text-sm">{cause.description}</p>
                       <div>
-                        <h4 className="text-sm font-medium text-navy-700 mb-2">
-                          Key Focus Areas:
-                        </h4>
+                        <h4 className="text-sm font-medium text-navy-700 mb-2">Key Focus Areas:</h4>
                         <div className="flex flex-wrap gap-2">
                           {cause.tags.map((tag) => (
-                            <Badge
-                              key={tag}
-                              variant="outline"
-                              className="bg-teal-50 text-teal-700 border-teal-200"
-                            >
+                            <Badge key={tag} variant="outline" className="bg-teal-50 text-teal-700 border-teal-200">
                               {tag}
                             </Badge>
                           ))}
                         </div>
                       </div>
                       <div>
-                        <h4 className="text-sm font-medium text-navy-700 mb-2">
-                          Ways to Get Involved:
-                        </h4>
+                        <h4 className="text-sm font-medium text-navy-700 mb-2">Ways to Get Involved:</h4>
                         <ul className="space-y-1">
                           {cause.actions.slice(0, 3).map((action, index) => (
-                            <li
-                              key={index}
-                              className="text-sm text-gray-600 flex items-start"
-                            >
+                            <li key={index} className="text-sm text-gray-600 flex items-start">
                               <span className="inline-block h-4 w-4 rounded-full bg-teal-100 text-teal-700 flex-shrink-0 mr-2 mt-0.5 text-center text-xs">
                                 {index + 1}
                               </span>
@@ -572,17 +544,10 @@ const PassionFinder = () => {
                       </div>
                     </CardContent>
                     <CardFooter className="flex justify-between pt-2">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="text-teal-700"
-                      >
+                      <Button variant="outline" size="sm" className="text-teal-700">
                         Learn More
                       </Button>
-                      <Button
-                        size="sm"
-                        className="bg-teal-400 hover:bg-teal-500"
-                      >
+                      <Button size="sm" className="bg-teal-400 hover:bg-teal-500">
                         Take Action
                       </Button>
                     </CardFooter>
@@ -600,12 +565,9 @@ const PassionFinder = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 text-sm mb-4">
-                      Discover more causes that might interest you based on your
-                      profile.
+                      Discover more causes that might interest you based on your profile.
                     </p>
-                    <Button className="w-full bg-navy-700 hover:bg-navy-800">
-                      View All Causes
-                    </Button>
+                    <Button className="w-full bg-navy-700 hover:bg-navy-800">View All Causes</Button>
                   </CardContent>
                 </Card>
 
@@ -620,19 +582,13 @@ const PassionFinder = () => {
                     <p className="text-gray-600 text-sm mb-4">
                       Connect with others who share your passion for these causes.
                     </p>
-                    <Button className="w-full bg-navy-700 hover:bg-navy-800">
-                      Visit the Map
-                    </Button>
+                    <Button className="w-full bg-navy-700 hover:bg-navy-800">Visit the Map</Button>
                   </CardContent>
                 </Card>
               </div>
 
               <div className="text-center mt-12">
-                <Button
-                  onClick={restartQuiz}
-                  variant="outline"
-                  className="flex items-center"
-                >
+                <Button onClick={restartQuiz} variant="outline" className="flex items-center">
                   <RefreshCw className="mr-2 h-4 w-4" />
                   Retake the Quiz
                 </Button>
