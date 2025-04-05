@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,24 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, MapPin, Users, Compass, ArrowRight } from "lucide-react";
 
-type Cause = 
-  | "climate"
-  | "education"
-  | "healthcare"
-  | "poverty"
-  | "equality"
-  | "conservation"
-  | "peace"
-  | "hunger";
+type Cause = "climate" | "education" | "healthcare" | "poverty" | "equality" | "conservation" | "peace" | "hunger";
 
 type MapUser = {
   id: string;
@@ -54,7 +39,7 @@ const InteractiveMap = () => {
         name: "Alex Johnson",
         location: "New York, USA",
         lat: 40.7128,
-        lng: -74.0060,
+        lng: -74.006,
         interests: ["climate", "conservation", "equality"],
         bio: "Environmental activist working on urban sustainability projects in NYC.",
         avatar: "https://randomuser.me/api/portraits/men/32.jpg",
@@ -83,7 +68,7 @@ const InteractiveMap = () => {
         id: "4",
         name: "Aisha Patel",
         location: "Mumbai, India",
-        lat: 19.0760,
+        lat: 19.076,
         lng: 72.8777,
         interests: ["education", "equality", "peace"],
         bio: "Community organizer focused on women's empowerment through education and entrepreneurship.",
@@ -94,7 +79,7 @@ const InteractiveMap = () => {
         name: "David Kim",
         location: "Seoul, South Korea",
         lat: 37.5665,
-        lng: 126.9780,
+        lng: 126.978,
         interests: ["climate", "conservation", "hunger"],
         bio: "Sustainable food systems researcher developing solutions for urban food security.",
         avatar: "https://randomuser.me/api/portraits/men/75.jpg",
@@ -149,9 +134,7 @@ const InteractiveMap = () => {
     }
 
     if (selectedCause) {
-      filtered = filtered.filter((user) =>
-        user.interests.includes(selectedCause as Cause)
-      );
+      filtered = filtered.filter((user) => user.interests.includes(selectedCause as Cause));
     }
 
     // In a real app, distance filtering would use geolocation
@@ -174,8 +157,7 @@ const InteractiveMap = () => {
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-navy-700">Interactive Map</h1>
             <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-              Connect with like-minded individuals around the world who share
-              your passion for social causes.
+              Connect with like-minded individuals around the world who share your passion for social causes.
             </p>
           </div>
 
@@ -189,9 +171,7 @@ const InteractiveMap = () => {
                 <CardContent className="space-y-6">
                   {/* Search */}
                   <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      Search
-                    </label>
+                    <label className="text-sm font-medium mb-2 block">Search</label>
                     <div className="relative">
                       <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                       <Input
@@ -205,18 +185,13 @@ const InteractiveMap = () => {
 
                   {/* Cause Selection */}
                   <div>
-                    <label className="text-sm font-medium mb-2 block">
-                      Cause
-                    </label>
-                    <Select
-                      value={selectedCause}
-                      onValueChange={setSelectedCause}
-                    >
+                    <label className="text-sm font-medium mb-2 block">Cause</label>
+                    <Select value={selectedCause} onValueChange={setSelectedCause}>
                       <SelectTrigger>
                         <SelectValue placeholder="Select a cause" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="">All Causes</SelectItem>
+                        <SelectItem value="all">All Causes</SelectItem>
                         <SelectItem value="climate">Climate Action</SelectItem>
                         <SelectItem value="education">Education</SelectItem>
                         <SelectItem value="healthcare">Healthcare</SelectItem>
@@ -233,17 +208,9 @@ const InteractiveMap = () => {
                   <div>
                     <div className="flex justify-between mb-2">
                       <label className="text-sm font-medium">Distance</label>
-                      <span className="text-sm text-gray-500">
-                        {distance[0]} miles
-                      </span>
+                      <span className="text-sm text-gray-500">{distance[0]} miles</span>
                     </div>
-                    <Slider
-                      defaultValue={[100]}
-                      max={100}
-                      step={5}
-                      value={distance}
-                      onValueChange={setDistance}
-                    />
+                    <Slider defaultValue={[100]} max={100} step={5} value={distance} onValueChange={setDistance} />
                   </div>
 
                   {/* Results Count */}
@@ -257,9 +224,7 @@ const InteractiveMap = () => {
 
               {/* User List on Mobile/Tablet */}
               <div className="mt-8 lg:hidden">
-                <h2 className="text-xl font-semibold mb-4 text-navy-700">
-                  People Near You
-                </h2>
+                <h2 className="text-xl font-semibold mb-4 text-navy-700">People Near You</h2>
                 <div className="space-y-4">
                   {filteredUsers.map((user) => (
                     <UserCard
@@ -281,9 +246,8 @@ const InteractiveMap = () => {
                   <Compass className="h-16 w-16 mb-4 text-teal-400 animate-pulse-slow" />
                   <p className="text-lg font-medium">Interactive Map</p>
                   <p className="text-sm text-gray-500 max-w-md text-center mt-2">
-                    This is a placeholder for the interactive map. In a real
-                    application, this would be an actual map showing user
-                    locations.
+                    This is a placeholder for the interactive map. In a real application, this would be an actual map
+                    showing user locations.
                   </p>
                 </div>
 
@@ -292,31 +256,23 @@ const InteractiveMap = () => {
                   <div
                     key={user.id}
                     className={`absolute w-8 h-8 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer ${
-                      selectedUser?.id === user.id
-                        ? "z-10 scale-125"
-                        : ""
+                      selectedUser?.id === user.id ? "z-10 scale-125" : ""
                     }`}
                     style={{
                       // Pseudo-random positions for the demo
-                      left: `${20 + (index * 67) % 80}%`,
-                      top: `${15 + (index * 53) % 70}%`,
+                      left: `${20 + ((index * 67) % 80)}%`,
+                      top: `${15 + ((index * 53) % 70)}%`,
                     }}
                     onClick={() => setSelectedUser(user)}
                   >
                     <div className="relative">
                       <div
                         className={`absolute -inset-1 rounded-full ${
-                          selectedUser?.id === user.id
-                            ? "bg-teal-400 animate-pulse-slow"
-                            : "bg-transparent"
+                          selectedUser?.id === user.id ? "bg-teal-400 animate-pulse-slow" : "bg-transparent"
                         }`}
                       ></div>
                       <div className="relative bg-white rounded-full p-1 border-2 border-teal-400">
-                        <img
-                          src={user.avatar}
-                          alt={user.name}
-                          className="w-full h-full rounded-full"
-                        />
+                        <img src={user.avatar} alt={user.name} className="w-full h-full rounded-full" />
                       </div>
                     </div>
                   </div>
@@ -329,54 +285,32 @@ const InteractiveMap = () => {
                   <CardContent className="pt-6">
                     <div className="flex flex-col sm:flex-row">
                       <div className="mb-4 sm:mb-0 sm:mr-6">
-                        <img
-                          src={selectedUser.avatar}
-                          alt={selectedUser.name}
-                          className="w-20 h-20 rounded-full"
-                        />
+                        <img src={selectedUser.avatar} alt={selectedUser.name} className="w-20 h-20 rounded-full" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-xl font-semibold text-navy-700">
-                          {selectedUser.name}
-                        </h3>
+                        <h3 className="text-xl font-semibold text-navy-700">{selectedUser.name}</h3>
                         <div className="flex items-center text-gray-500 mb-2">
                           <MapPin className="h-4 w-4 mr-1" />
                           {selectedUser.location}
                         </div>
                         <p className="text-gray-600 mb-4">{selectedUser.bio}</p>
                         <div className="mb-4">
-                          <h4 className="text-sm font-medium text-gray-500 mb-2">
-                            Passionate about:
-                          </h4>
+                          <h4 className="text-sm font-medium text-gray-500 mb-2">Passionate about:</h4>
                           <div className="flex flex-wrap gap-2">
                             {selectedUser.interests.map((interest) => (
-                              <Badge
-                                key={interest}
-                                variant="secondary"
-                                className="bg-teal-50 text-teal-700"
-                              >
+                              <Badge key={interest} variant="secondary" className="bg-teal-50 text-teal-700">
                                 {interest
                                   .split(" ")
-                                  .map(
-                                    (word) =>
-                                      word.charAt(0).toUpperCase() +
-                                      word.slice(1)
-                                  )
+                                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
                                   .join(" ")}
                               </Badge>
                             ))}
                           </div>
                         </div>
                         <div className="flex space-x-3">
-                          <Button className="bg-teal-400 hover:bg-teal-500">
-                            Connect
-                          </Button>
+                          <Button className="bg-teal-400 hover:bg-teal-500">Connect</Button>
                           <Button variant="outline">Message</Button>
-                          <Button
-                            variant="ghost"
-                            className="ml-auto"
-                            onClick={() => setSelectedUser(null)}
-                          >
+                          <Button variant="ghost" className="ml-auto" onClick={() => setSelectedUser(null)}>
                             Close
                           </Button>
                         </div>
@@ -387,20 +321,14 @@ const InteractiveMap = () => {
               ) : (
                 <div className="hidden lg:block">
                   <div className="flex justify-between items-center mb-4">
-                    <h2 className="text-xl font-semibold text-navy-700">
-                      People Near You
-                    </h2>
+                    <h2 className="text-xl font-semibold text-navy-700">People Near You</h2>
                     <Button variant="ghost" size="sm">
                       View All <ArrowRight className="ml-1 h-4 w-4" />
                     </Button>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {filteredUsers.slice(0, 4).map((user) => (
-                      <UserCard
-                        key={user.id}
-                        user={user}
-                        onClick={() => setSelectedUser(user)}
-                      />
+                      <UserCard key={user.id} user={user} onClick={() => setSelectedUser(user)} />
                     ))}
                   </div>
                 </div>
@@ -427,19 +355,13 @@ const UserCard = ({
   return (
     <Card
       className={`cursor-pointer transition-all ${
-        isSelected
-          ? "border-teal-400 shadow-md"
-          : "hover:border-teal-200 hover:shadow-md"
+        isSelected ? "border-teal-400 shadow-md" : "hover:border-teal-200 hover:shadow-md"
       }`}
       onClick={onClick}
     >
       <CardContent className="p-4">
         <div className="flex items-center">
-          <img
-            src={user.avatar}
-            alt={user.name}
-            className="w-12 h-12 rounded-full mr-4"
-          />
+          <img src={user.avatar} alt={user.name} className="w-12 h-12 rounded-full mr-4" />
           <div>
             <h3 className="font-medium text-navy-700">{user.name}</h3>
             <div className="flex items-center text-sm text-gray-500">
@@ -453,11 +375,7 @@ const UserCard = ({
         </div>
         <div className="mt-3 flex flex-wrap gap-1">
           {user.interests.slice(0, 2).map((interest) => (
-            <Badge
-              key={interest}
-              variant="outline"
-              className="text-xs bg-teal-50 border-teal-100"
-            >
+            <Badge key={interest} variant="outline" className="text-xs bg-teal-50 border-teal-100">
               {interest.charAt(0).toUpperCase() + interest.slice(1)}
             </Badge>
           ))}
