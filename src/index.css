@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 174 35% 98%;
+    --foreground: 196 60% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 196 60% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 196 60% 10%;
+
+    --primary: 174 59% 40%;
+    --primary-foreground: 174 59% 95%;
+
+    --secondary: 196 40% 24%;
+    --secondary-foreground: 196 40% 95%;
+
+    --muted: 174 20% 92%;
+    --muted-foreground: 196 20% 40%;
+
+    --accent: 29 90% 67%;
+    --accent-foreground: 29 90% 15%;
+
+    --destructive: 12 79% 61%;
+    --destructive-foreground: 12 79% 95%;
+
+    --border: 196 20% 88%;
+    --input: 196 20% 85%;
+    --ring: 174 59% 40%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 196 60% 10%;
+    --foreground: 174 35% 98%;
+
+    --card: 196 50% 15%;
+    --card-foreground: 174 35% 98%;
+
+    --popover: 196 50% 15%;
+    --popover-foreground: 174 35% 98%;
+
+    --primary: 174 59% 40%;
+    --primary-foreground: 174 59% 95%;
+
+    --secondary: 196 40% 24%;
+    --secondary-foreground: 196 40% 95%;
+
+    --muted: 196 30% 20%;
+    --muted-foreground: 196 20% 70%;
+
+    --accent: 29 90% 67%;
+    --accent-foreground: 29 90% 15%;
+
+    --destructive: 12 79% 61%;
+    --destructive-foreground: 12 79% 95%;
+
+    --border: 196 30% 25%;
+    --input: 196 30% 30%;
+    --ring: 174 59% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-400 to-navy-700 bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply bg-teal-400 text-white hover:bg-teal-500 rounded-md px-4 py-2 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-navy-700 text-white hover:bg-navy-800 rounded-md px-4 py-2 transition-colors;
+  }
+  
+  .btn-accent {
+    @apply bg-orange-300 text-navy-700 hover:bg-orange-400 rounded-md px-4 py-2 transition-colors;
+  }
+}
